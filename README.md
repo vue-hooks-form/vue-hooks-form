@@ -53,4 +53,4 @@ const {
 
 ## License
 
-[MIT](./LICENSE) License © 2022-Present [Elone Hoo](https://github.com/elonehoo)
+[MIT](./LICENSE) License © 2023-Present [Elone Hoo](https://github.com/elonehoo)

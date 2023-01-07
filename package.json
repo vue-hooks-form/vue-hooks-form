@@ -26,6 +26,9 @@
     "build:yup": "pnpm -C packages/yup run build",
     "test": "pnpm -C test run test",
     "play": "pnpm -C playground run dev",
+    "docs:dev":"pnpm -C docs run dev",
+    "docs:build":"pnpm -C docs run build",
+    "docs:serve":"pnpm -C docs run serve",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
