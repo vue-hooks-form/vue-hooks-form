@@ -33,7 +33,7 @@ jobs:
         run: pnpm install
 
       - name: Core Build
-        run: pnpm run core:build
+        run: pnpm run build:core
 
       - name: class-validator Build
         run: pnpm run build:class-validator
