@@ -19,20 +19,27 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Setup
-        run: npm i -g @antfu/ni
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: latest
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
 
       - name: Install
-        run: nci
+        run: pnpm install
 
       - name: Core Build
-        run: nr core:build
+        run: pnpm run core:build
 
       - name: class-validator Build
-        run: nr build:class-validator
+        run: pnpm run build:class-validator
 
       - name: Yup Build
-        run: nr build:yup
+        run: pnpm run build:yup
 
       - name: Test
-        run: nr test
+        run: pnpm run test
