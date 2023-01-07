@@ -1,7 +1,7 @@
 {
   "name": "@vue-hooks-form/monorepo",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": "true",
   "description": "Vue Composition API for validating form.",
   "author": "Elone Hoo <hi@elonehoo.me>",
@@ -20,7 +20,7 @@
     "form"
   ],
   "scripts": {
-    "build":"pnpm run build:core && pnpm run build:class-validator && pnpm run build:yup",
+    "build": "pnpm run build:core && pnpm run build:class-validator && pnpm run build:yup",
     "build:core": "pnpm -C packages/core run build",
     "build:class-validator": "pnpm -C packages/class-validator run build",
     "build:yup": "pnpm -C packages/yup run build",
