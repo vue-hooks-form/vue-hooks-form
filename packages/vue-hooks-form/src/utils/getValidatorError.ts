@@ -4,9 +4,11 @@ import { isBoolean, isString } from './index'
 
 export function getValidatorError(
   result: ValidateResult,
-  type = 'validate'
+  type = 'validate',
 ): FieldError | undefined {
-  if (isBoolean(result) && !result) {
+  if (
+    (isBoolean(result) && !result)
+  ) {
     return {
       type: type as keyof RegisterOptions,
       message: isString(result) ? result : '',

@@ -1,4 +1,4 @@
-import { isDateObject, isObject, isPrimitive } from '.'
+import { isDateObject, isObject, isPrimitive } from './index'
 
 export function deepEqual(obj1: any, obj2: any) {
   if (isPrimitive(obj1) || isPrimitive(obj2)) {
@@ -27,10 +27,9 @@ export function deepEqual(obj1: any, obj2: any) {
       const val2 = obj2[key]
 
       if (
-        isObject(val1) ||
-        isObject(val2) ||
-        (isObject(val1) && isObject(val2)) ||
-        (isDateObject(val1) && isDateObject(val2))
+        (isObject(val1) || isObject(val2))
+        || (isObject(val1) && isObject(val2))
+        || (isDateObject(val1) && isDateObject(val2))
           ? !deepEqual(val1, val2)
           : val1 !== val2
       ) {

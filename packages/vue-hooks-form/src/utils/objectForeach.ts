@@ -4,3 +4,4 @@ export function objectForeach<T extends object>(
 ) {
   Object.entries(object).forEach(callback as (value: [string, any], index: number, array: [string, any][]) => void)
 }
+

@@ -1,5 +1,5 @@
 {
-  "name": "vue-composition-form",
+  "name": "vue-hooks-form",
   "type": "module",
   "version": "0.0.0",
   "description": "Vue Composition API for validating form.",
