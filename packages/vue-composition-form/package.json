@@ -1,0 +1,43 @@
+{
+  "name": "vue-composition-form",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Vue Composition API for validating form.",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "keywords": [
+    "composition",
+    "vue",
+    "form"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "build:fix": "esno scripts/postbuild.ts"
+  },
+  "peerDependencies": {
+    "vue": ">=3.2.45"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.setwith": "^4.3.2",
+    "lodash.unset": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/lodash.get": "^4.4.7",
+    "@types/lodash.setwith": "^4.3.7",
+    "@types/lodash.unset": "^4.5.7"
+  }
+}
