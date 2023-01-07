@@ -12,6 +12,7 @@
     "form"
   ],
   "scripts": {
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
