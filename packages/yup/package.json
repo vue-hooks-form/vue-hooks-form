@@ -1,0 +1,38 @@
+{
+  "name": "@vue-hooks-form/yup",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "yup resolver for vue-hooks-form",
+  "keywords": [
+    "yup",
+    "vue-hooks-form",
+    "vue-hooks-form-resolver"
+  ],
+  "license": "MIT",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "build:fix": "esno scripts/postbuild.ts"
+  },
+  "peerDependencies": {
+    "@vue-hooks-form/core": "workspace:*",
+    "yup": ">=0.32.11"
+  },
+  "dependencies": {
+    "@vue-hooks-form/core": "workspace:*",
+    "yup": "^0.32.11"
+  }
+}

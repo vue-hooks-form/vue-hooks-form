@@ -1,0 +1,34 @@
+{
+  "name": "@vue-hooks-form/class-validator",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "class-validator resolver for vue-hooks-form",
+  "keywords": [
+    "class-validator",
+    "vue-hooks-form",
+    "vue-hooks-form-resolver"],
+  "license": "MIT",
+  "author": "Elone Hoo <hi@gmail.com>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "build:fix": "esno scripts/postbuild.ts"
+  },
+  "peerDependencies": {
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.12.0",
+    "@vue-hooks-form/core": "workspace:*"
+  }
+}

@@ -31,10 +31,14 @@ export type UseFieldArrayRemove = (id: number | number[]) => void
 export type UseFieldArraySwap = (from: number, to: number) => void
 
 export interface UseFieldArrayReturn<FieldValues> {
+  //@ts-ignore
   insert: UseFieldArrayInsert<FieldValues[]>
   remove: UseFieldArrayRemove
+  //@ts-ignore
   prepend: UseFieldArrayPrepend<FieldValues[]>
+  //@ts-ignore
   append: UseFieldArrayAppend<FieldValues[]>
   swap: UseFieldArraySwap
+  //@ts-ignore
   fields: UseFieldArrayField<FieldValues>[]
 }
