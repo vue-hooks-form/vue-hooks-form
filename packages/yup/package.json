@@ -2,22 +2,22 @@
   "name": "@vue-hooks-form/yup",
   "version": "0.0.0",
   "description": "yup resolver for vue-hooks-form",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
   "keywords": [
     "yup",
     "vue-hooks-form",
     "vue-hooks-form-resolver"
   ],
-  "license": "MIT",
-  "author": "Elone Hoo <hi@elonehoo.me>",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],

@@ -11,17 +11,18 @@ export function getFormEl(elRef: MaybeRef<any> | InputEvent): FieldElement | und
 
   if (isFieldElement(elRef)) {
     return elRef
-  } else if (isHTMLElement(elRef)) {
+  }
+  else if (isHTMLElement(elRef)) {
     return getValidFormElement(elRef)
-  } else if (isObject(elRef)) {
+  }
+  else if (isObject(elRef)) {
     const keys = Reflect.ownKeys(elRef)
     for (const key of keys) {
       const val = unref(elRef[key])
-      if (isFieldElement(val)) {
+      if (isFieldElement(val))
         return val
-      } else if (isHTMLElement(val)) {
+      else if (isHTMLElement(val))
         return val.querySelectorAll('input, textarea, select')[0] as FieldElement
-      }
     }
   }
 }

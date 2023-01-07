@@ -123,13 +123,13 @@ export interface UseFormHandlers<
   clearErrors: UseFormClearErrors<FieldName>
   setValue: UseFormSetValue<TFieldValues, keyof TFieldValues>
   triggerValidate: UseFormTriggerValidate<FieldName>
-  //@ts-ignore
+  // @ts-expect-error
   reset: UseFormReset<TFieldValues>
-  //@ts-ignore
+  // @ts-expect-error
   handleSubmit: UseFormHandleSubmit<TFieldValues>
-  //@ts-ignore
+  // @ts-expect-error
   unregister: UseFormUnregister<TFieldValues>
-  //@ts-ignore
+  // @ts-expect-error
   register: UseFormRegister<TFieldValues>
   setFocus: UseFormSetFocus<TFieldValues>
   isExistInErrors: UseFormIsExistInErrors<TFieldValues>
@@ -150,7 +150,7 @@ export type UseFormReturn<TFieldValues extends FieldValues> = {
 
 export interface FormState<TFieldValues> {
   isDirty: boolean
-  //@ts-ignore
+  // @ts-expect-error
   dirtyFields: FieldNamesMarkedBoolean<TFieldValues>
   isSubmitted: boolean
   isSubmitSuccessful: boolean

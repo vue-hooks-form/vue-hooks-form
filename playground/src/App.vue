@@ -7,21 +7,24 @@ const {
   isExistInErrors,
   handleSubmit,
 } = useForm({
-  mode: 'onChange'
+  mode: 'onChange',
 })
 
-const onSubmit = createSubmitHandler((data:any) => {
+const onSubmit = createSubmitHandler((data: any) => {
   alert('submit success')
 })
 
-const onError = createErrorHandler((errors:any) => {
+const onError = createErrorHandler((errors: any) => {
   alert('submit failed')
 })
 </script>
+
 <template>
   {{ errors }}
   <form @submit.prevent="handleSubmit(onSubmit, onError)()">
-    name: <input :="register('name', { required: true })"/>
-    <button type="submit">submit</button>
+    name: <input :="register('name', { required: true })">
+    <button type="submit">
+      submit
+    </button>
   </form>
 </template>

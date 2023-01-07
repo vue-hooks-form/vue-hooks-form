@@ -16,4 +16,3 @@ export function getValidationMode(mode: Mode): {
     isOnTouch: mode === VALIDATION_MODE.onTouched,
   }
 }
-

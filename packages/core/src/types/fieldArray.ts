@@ -17,7 +17,7 @@ export type FieldPayload<
   TFieldValues extends FieldValues[] = FieldValues[],
   FieldNames extends string = TFieldValues extends (infer R)[] ? keyof R : '',
   > = {
-    [K in FieldNames]?: TFieldValues extends (infer R)[] ? R[keyof R]: never
+    [K in FieldNames]?: TFieldValues extends (infer R)[] ? R[keyof R] : never
   }
 
 export type UseFieldArrayInsert<TFieldValues extends FieldValues[]> = (startIndex: number, field: FieldPayload<TFieldValues>) => void
@@ -31,14 +31,14 @@ export type UseFieldArrayRemove = (id: number | number[]) => void
 export type UseFieldArraySwap = (from: number, to: number) => void
 
 export interface UseFieldArrayReturn<FieldValues> {
-  //@ts-ignore
+  // @ts-expect-error
   insert: UseFieldArrayInsert<FieldValues[]>
   remove: UseFieldArrayRemove
-  //@ts-ignore
+  // @ts-expect-error
   prepend: UseFieldArrayPrepend<FieldValues[]>
-  //@ts-ignore
+  // @ts-expect-error
   append: UseFieldArrayAppend<FieldValues[]>
   swap: UseFieldArraySwap
-  //@ts-ignore
+  // @ts-expect-error
   fields: UseFieldArrayField<FieldValues>[]
 }

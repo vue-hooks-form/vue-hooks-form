@@ -15,7 +15,8 @@ async function parseYupSchema<T extends FieldValues>(
   const errors: FieldErrors<T> = {}
   try {
     await schema.validate(values, options)
-  } catch (errs) {
+  }
+  catch (errs) {
     (errs as ValidationError).inner.forEach((err: ValidationError) => {
       set(errors, err.path as keyof T, err.message)
     })

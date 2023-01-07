@@ -13,7 +13,8 @@ export function getValidatorError(
       type: type as keyof RegisterOptions,
       message: isString(result) ? result : '',
     }
-  } else if (isString(result)) {
+  }
+  else if (isString(result)) {
     return {
       type: type as keyof RegisterOptions,
       message: result,

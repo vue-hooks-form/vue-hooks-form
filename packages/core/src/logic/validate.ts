@@ -18,12 +18,11 @@ import { isFieldElement } from '../utils/isFieldElement'
 import { InvalidDate } from '../utils/constant'
 
 export function handleValidateError(error: FieldError, shouldFocusOnError: boolean, el?: FieldElement) {
-  if (!isFieldElement(el)) {
+  if (!isFieldElement(el))
     return
-  }
-  if (!isEmptyObject(error) && shouldFocusOnError) {
+
+  if (!isEmptyObject(error) && shouldFocusOnError)
     el.focus()
-  }
 }
 
 export async function validateField(
@@ -63,9 +62,11 @@ export async function validateField(
       if (valueAsNumber) {
         const elVal = (el as HTMLInputElement).value
         set(field, 'inputValue', ref((el as HTMLInputElement).valueAsNumber || elVal === '' ? elVal : parseFloat(elVal)))
-      } else if (valueAsDate) {
+      }
+      else if (valueAsDate) {
         set(field, 'inputValue', ref((el as HTMLInputElement).valueAsDate || InvalidDate))
-      } else if (setValueAs) {
+      }
+      else if (setValueAs) {
         set(field, 'inputValue', ref(setValueAs(unrefInputVal)))
       }
     }
@@ -150,11 +151,10 @@ export async function validateField(
       }
     }
 
-    if (disabled && isFieldElement(el)) {
+    if (disabled && isFieldElement(el))
       el.setAttribute('disabled', '')
-    } else if (!disabled && isFieldElement(el)) {
+    else if (!disabled && isFieldElement(el))
       el.removeAttribute('disabled')
-    }
 
     if (validate) {
       if (isFunction(validate)) {
@@ -167,7 +167,8 @@ export async function validateField(
 
         if (!validateAllFieldCriteria)
           return error
-      } else if (isObject(validate)) {
+      }
+      else if (isObject(validate)) {
         for (const key in validate) {
           const result = await validate[key](unrefInputVal)
 
@@ -181,10 +182,10 @@ export async function validateField(
         }
       }
     }
-  } finally {
+  }
+  finally {
     handleValidateError(error, shouldFocusOnError, el)
   }
 
   return error
 }
-

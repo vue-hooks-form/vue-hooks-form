@@ -4,7 +4,7 @@ import type { FieldError } from './errors'
 
 export type FieldValues = Record<string, any>
 
-export type FieldElement = HTMLInputElement| HTMLSelectElement | HTMLTextAreaElement
+export type FieldElement = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
 
 export interface Field {
   inputValue: Ref
@@ -22,4 +22,3 @@ export interface FieldState {
 }
 
 export type Fields<FieldValues extends object, FieldKeys extends keyof FieldValues> = Record<FieldKeys, Field>
-

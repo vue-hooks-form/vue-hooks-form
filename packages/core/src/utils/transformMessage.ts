@@ -15,8 +15,8 @@ export function getValueAndMessage(field: RegisterOptions[keyof RegisterOptions]
   if (isNumber(field))
     return { value: field, message: '' }
 
-  if (isDateObject(field)) {
+  if (isDateObject(field))
     return { value: field, message: '' }
-  }
+
   return field
 }

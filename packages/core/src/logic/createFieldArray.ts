@@ -27,7 +27,7 @@ export function createFieldArray<TFieldsValues extends FieldValues = FieldValues
     fieldName: string,
     defaultVal: unknown,
   ) => {
-    let index = fieldIndex
+    const index = fieldIndex
     fieldIndex++
 
     set(control._fieldArrayDefaultValues, index, defaultVal)
@@ -51,15 +51,14 @@ export function createFieldArray<TFieldsValues extends FieldValues = FieldValues
   }
 
   const remove: UseFieldArrayRemove = (indexes) => {
-    if (!isArray(indexes)) {
+    if (!isArray(indexes))
       indexes = [indexes]
-    }
+
     for (const index of indexes) {
       const targetIndex = _fields.findIndex(field => field.index === index)
 
-      if (targetIndex >= 0) {
+      if (targetIndex >= 0)
         _fields.splice(targetIndex, 1)
-      }
     }
   }
 

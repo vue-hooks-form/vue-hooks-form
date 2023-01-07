@@ -6,9 +6,11 @@ export default function cloneObject<T>(data: T): T {
 
   if (data instanceof Date) {
     copy = new Date(data)
-  } else if (data instanceof Set) {
+  }
+  else if (data instanceof Set) {
     copy = new Set(data)
-  } else if (isArray || isObject(data)) {
+  }
+  else if (isArray || isObject(data)) {
     copy = isArray ? [] : {}
     for (const key in data) {
       if (isFunction(data[key])) {
@@ -17,7 +19,8 @@ export default function cloneObject<T>(data: T): T {
       }
       copy[key] = cloneObject(data[key])
     }
-  } else {
+  }
+  else {
     return data
   }
 

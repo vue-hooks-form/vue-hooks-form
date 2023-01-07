@@ -38,4 +38,4 @@ export type DeepMap<T, TValue> = IsAny<T> extends true
 
 export type MaybeRef<T> = T | Ref<T>
 
-export type IsString<Val> = Val extends string ? Val: never
+export type IsString<Val> = Val extends string ? Val : never

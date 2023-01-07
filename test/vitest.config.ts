@@ -10,4 +10,4 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
   },
-} as UserConfigExport &{ test: any })
+} as UserConfigExport & { test: any })
