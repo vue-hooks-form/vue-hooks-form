@@ -1,0 +1,29 @@
+{
+  "name": "@vue-hooks-form/test",
+  "type": "module",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "Vue Composition API for validating form.",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "keywords": [
+    "composition",
+    "vue",
+    "form"
+  ],
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue-hooks-form/class-validator": "workspace:^0.0.0",
+    "@vue-hooks-form/core": "workspace:^0.0.0",
+    "@vue-hooks-form/yup": "workspace:^0.0.0",
+    "@vue/test-utils": "^2.2.7",
+    "vite": "^4.0.4",
+    "vitest": "^0.26.3"
+  },
+  "devDependencies": {
+    "jsdom": "^20.0.3"
+  }
+}
