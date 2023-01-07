@@ -1,0 +1,29 @@
+{
+  "name": "@vue-composition-form/monorepo",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "Vue Composition API for validating form.",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "composition",
+    "vue",
+    "form"
+  ],
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.2.45"
+  },
+  "dependencies": {
+    "magic-string": "^0.27.0",
+    "typescript": "^4.9.4",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.34.0",
+    "eslint": "^8.31.0"
+  }
+}
