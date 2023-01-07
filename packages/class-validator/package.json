@@ -4,6 +4,14 @@
   "description": "class-validator resolver for vue-hooks-form",
   "author": "Elone Hoo <hi@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/elonehoo/vue-hooks-form#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/vue-hooks-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/vue-hooks-form/issues"
+  },
   "keywords": [
     "class-validator",
     "vue-hooks-form",

@@ -4,6 +4,14 @@
   "description": "yup resolver for vue-hooks-form",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
+  "homepage": "https://github.com/elonehoo/vue-hooks-form#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/vue-hooks-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/vue-hooks-form/issues"
+  },
   "keywords": [
     "yup",
     "vue-hooks-form",

@@ -6,12 +6,21 @@
   "description": "Vue Composition API for validating form.",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
+  "homepage": "https://github.com/elonehoo/vue-hooks-form#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/vue-hooks-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/vue-hooks-form/issues"
+  },
   "keywords": [
     "composition",
     "vue",
     "form"
   ],
   "scripts": {
+    "build":"pnpm run build:core && pnpm run build:class-validator && pnpm run build:yup",
     "build:core": "pnpm -C packages/core run build",
     "build:class-validator": "pnpm -C packages/class-validator run build",
     "build:yup": "pnpm -C packages/yup run build",
