@@ -1,13 +1,14 @@
 {
   "name": "@vue-hooks-form/class-validator",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.0",
   "description": "class-validator resolver for vue-hooks-form",
   "author": "Elone Hoo <hi@gmail.com>",
   "license": "MIT",
   "keywords": [
     "class-validator",
     "vue-hooks-form",
-    "vue-hooks-form-resolver"],
+    "vue-hooks-form-resolver"
+  ],
   "exports": {
     ".": {
       "require": "./dist/index.js",
