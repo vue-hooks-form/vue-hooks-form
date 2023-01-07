@@ -1,7 +1,6 @@
 {
   "name": "@vue-hooks-form/class-validator",
   "version": "0.0.0",
-  "type": "module",
   "description": "class-validator resolver for vue-hooks-form",
   "keywords": [
     "class-validator",
@@ -10,12 +9,12 @@
   "license": "MIT",
   "author": "Elone Hoo <hi@gmail.com>",
   "main": "./dist/index.js",
-  "module": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.cjs"
+      "import": "./dist/index.mjs"
     }
   },
   "files": [

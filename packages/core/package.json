@@ -1,6 +1,5 @@
 {
   "name": "@vue-hooks-form/core",
-  "type": "module",
   "version": "0.0.0",
   "description": "Vue Composition API for validating form.",
   "author": "Elone Hoo <hi@elonehoo.me>",
@@ -14,12 +13,12 @@
     "dist"
   ],
   "main": "./dist/index.js",
-  "module": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.cjs"
+      "import": "./dist/index.mjs"
     }
   },
   "scripts": {

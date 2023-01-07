@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vue-hooks-form/class-validator": "workspace:^0.0.0",
-    "@vue-hooks-form/core": "workspace:^0.0.0",
-    "@vue-hooks-form/yup": "workspace:^0.0.0",
+    "@vue-hooks-form/class-validator": "workspace:*",
+    "@vue-hooks-form/core": "workspace:*",
+    "@vue-hooks-form/yup": "workspace:*",
     "@vue/test-utils": "^2.2.7",
     "vite": "^4.0.4",
     "vitest": "^0.26.3"

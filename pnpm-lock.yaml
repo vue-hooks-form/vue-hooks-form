@@ -71,19 +71,25 @@ importers:
   playground:
     specifiers:
       '@vitejs/plugin-vue': ^4.0.0
+      '@vue-hooks-form/class-validator': workspace:*
+      '@vue-hooks-form/core': workspace:*
+      '@vue-hooks-form/yup': workspace:*
       vite: ^4.0.0
       vue-tsc: ^1.0.11
     dependencies:
       '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
+      '@vue-hooks-form/class-validator': link:../packages/class-validator
+      '@vue-hooks-form/core': link:../packages/core
+      '@vue-hooks-form/yup': link:../packages/yup
       vite: 4.0.4
       vue-tsc: 1.0.22_typescript@4.9.4
 
   test:
     specifiers:
       '@vitejs/plugin-vue': ^4.0.0
-      '@vue-hooks-form/class-validator': workspace:^0.0.0
-      '@vue-hooks-form/core': workspace:^0.0.0
-      '@vue-hooks-form/yup': workspace:^0.0.0
+      '@vue-hooks-form/class-validator': workspace:*
+      '@vue-hooks-form/core': workspace:*
+      '@vue-hooks-form/yup': workspace:*
       '@vue/test-utils': ^2.2.7
       jsdom: ^20.0.3
       vite: ^4.0.4
