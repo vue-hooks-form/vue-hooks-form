@@ -18,7 +18,7 @@ type RegisterFn<T extends FiledValues, V = T[typeof name]> =
 
 ```vue
 <script setup lang="ts">
-import { useForm } from 'vue-use-form'
+import { useForm } from '@vue-hooks-form/core'
 const {
   register,
   formState: { errors }
@@ -302,7 +302,7 @@ register('test', {
 
 ```vue
 <script setup>
-  import { useForm } from 'vue-use-form'
+  import { useForm } from '@vue-hooks-form/core'
   const { register, handleSubmit } = useForm({
     defaultValues: {
       firstName: '',
