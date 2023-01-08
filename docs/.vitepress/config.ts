@@ -87,6 +87,10 @@ export default defineConfig({
                       {text:'setError',link:'/use-form/setError'},
                       {text:'clearErrors',link:'/use-form/clearErrors'},
                       {text:'setValue',link:'/use-form/setValue'},
+                      {text:'setFocus',link:'/use-form/setFocus'},
+                      {text:'getValues',link:'/use-form/getValues'},
+                      {text:'getFieldState',link:'/use-form/getFieldState'},
+                      {text:'trigger',link:'/use-form/trigger'},
                     ]
                   },
                 ]
