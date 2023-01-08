@@ -85,6 +85,8 @@ export default defineConfig({
                       {text:'handleSubmit',link:'/use-form/handleSubmit'},
                       {text:'reset',link:'/use-form/reset'},
                       {text:'setError',link:'/use-form/setError'},
+                      {text:'clearErrors',link:'/use-form/clearErrors'},
+                      {text:'setValue',link:'/use-form/setValue'},
                     ]
                   },
                 ]
