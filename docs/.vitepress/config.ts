@@ -84,6 +84,7 @@ export default defineConfig({
                       {text:'formState',link:'/use-form/formState'},
                       {text:'handleSubmit',link:'/use-form/handleSubmit'},
                       {text:'reset',link:'/use-form/reset'},
+                      {text:'setError',link:'/use-form/setError'},
                     ]
                   },
                 ]
