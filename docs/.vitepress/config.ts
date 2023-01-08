@@ -80,6 +80,7 @@ export default defineConfig({
                     items:[
                       {text:'useForm',link:'/use-form/'},
                       {text:'register',link:'/use-form/register'},
+                      {text:'unregister',link:'/use-form/unregister'},
                     ]
                   },
                 ]
