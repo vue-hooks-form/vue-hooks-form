@@ -25,7 +25,7 @@ features:
   - title: No Component
     details: No need to import any components to use, you can use it in all UI framework
   - title: Easy to use
-    details: Just 3 main hooks, useForm, useFormState, useFieldArray
+    details: Just 1 main hooks, useForm
   - title: inspired by react-hook-form
     details: Learn from many excellent mechanisms of react-hook-form
 ---

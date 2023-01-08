@@ -46,7 +46,7 @@ export default defineConfig({
                 {
                   text: '',
                   items: [
-                    { text: 'useForm', link: '/function/use-form/' },
+                    { text: 'useForm', link: '/use-form/' },
                   ],
                 },
               ],
@@ -78,7 +78,8 @@ export default defineConfig({
                   {
                     text:'useForm',
                     items:[
-                      {text:'useForm',link:'/function/use-form/'}
+                      {text:'useForm',link:'/use-form/'},
+                      {text:'register',link:'/use-form/register'},
                     ]
                   },
                 ]

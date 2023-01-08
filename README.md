@@ -21,7 +21,7 @@ Inspired by <a href="https://github.com/react-hook-form/react-hook-form">react-h
 
 - Type Strong: Written in TypeScript
 - No Component: No need to import any components to use, you can use it in all UI framework
-- Easy to use: Just 2 main hooks: useForm, useFieldArray
+- Easy to use: Just 1 main hooks: useForm
 
 ```vue
 <script setup lang="ts">
