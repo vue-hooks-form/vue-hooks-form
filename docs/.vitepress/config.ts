@@ -82,6 +82,8 @@ export default defineConfig({
                       {text:'register',link:'/use-form/register'},
                       {text:'unregister',link:'/use-form/unregister'},
                       {text:'formState',link:'/use-form/formState'},
+                      {text:'handleSubmit',link:'/use-form/handleSubmit'},
+                      {text:'reset',link:'/use-form/reset'},
                     ]
                   },
                 ]
