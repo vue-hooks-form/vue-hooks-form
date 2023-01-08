@@ -30,7 +30,7 @@ function App() {
 }
 ```
 
-In `vue-use-form`,
+In `vue-hooks-form`,
 
 ```vue
 <script setup lang="ts">
