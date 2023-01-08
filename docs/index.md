@@ -17,6 +17,9 @@ hero:
         text: Get Started
         link: /guide/
       - theme: alt
+        text: Playground
+        link: https://stackblitz.com/edit/vue-hooks-form?file=src/App.vue
+      - theme: alt
         text: View on GitHub
         link: https://github.com/elonehoo/vue-hooks-form
 features:
