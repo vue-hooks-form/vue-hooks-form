@@ -21,9 +21,9 @@
     "@vue-hooks-form/yup": "workspace:*",
     "@vue/test-utils": "^2.2.7",
     "vite": "^4.0.4",
-    "vitest": "^0.26.3"
+    "vitest": "^0.27.1"
   },
   "devDependencies": {
-    "jsdom": "^20.0.3"
+    "jsdom": "^21.0.0"
   }
 }
