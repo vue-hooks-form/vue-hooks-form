@@ -19,11 +19,11 @@
     "@vue-hooks-form/class-validator": "workspace:*",
     "@vue-hooks-form/core": "workspace:*",
     "@vue-hooks-form/yup": "workspace:*",
-    "@vue/test-utils": "^2.2.7",
-    "vite": "^4.0.4",
-    "vitest": "^0.27.1"
+    "@vue/test-utils": "^2.2.9",
+    "vite": "^4.1.0",
+    "vitest": "^0.28.3"
   },
   "devDependencies": {
-    "jsdom": "^21.0.0"
+    "jsdom": "^21.1.0"
   }
 }
