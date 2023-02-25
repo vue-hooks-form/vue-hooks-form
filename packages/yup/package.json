@@ -1,6 +1,6 @@
 {
   "name": "@vue-hooks-form/yup",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "yup resolver for vue-hooks-form",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
