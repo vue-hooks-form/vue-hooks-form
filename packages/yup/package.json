@@ -36,10 +36,10 @@
   },
   "peerDependencies": {
     "@vue-hooks-form/core": "workspace:*",
-    "yup": ">=0.32.11"
+    "yup": ">=1.0.0"
   },
   "dependencies": {
     "@vue-hooks-form/core": "workspace:*",
-    "yup": "^0.32.11"
+    "yup": "^1.0.0"
   }
 }
