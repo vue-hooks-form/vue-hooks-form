@@ -19,9 +19,9 @@
     "@vue-hooks-form/class-validator": "workspace:*",
     "@vue-hooks-form/core": "workspace:*",
     "@vue-hooks-form/yup": "workspace:*",
-    "@vue/test-utils": "^2.3.0",
+    "@vue/test-utils": "^2.3.1",
     "vite": "^4.1.4",
-    "vitest": "^0.29.1"
+    "vitest": "^0.29.2"
   },
   "devDependencies": {
     "jsdom": "^21.1.0"
