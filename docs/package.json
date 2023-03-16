@@ -10,16 +10,16 @@
   "license": "MIT",
   "dependencies": {
     "@iconify-json/carbon": "^1.1.16",
-    "@unocss/reset": "^0.50.4",
-    "@vitejs/plugin-vue": "^4.0.0",
+    "@unocss/reset": "^0.50.6",
+    "@vitejs/plugin-vue": "^4.1.0",
     "@vueuse/core": "^9.13.0",
     "esno": "^0.16.3",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.17.2",
-    "unocss": "^0.50.4",
+    "jiti": "^1.18.2",
+    "unocss": "^0.50.6",
     "unplugin-vue-components": "^0.24.1",
-    "vite": "^4.1.4",
-    "vitepress": "1.0.0-alpha.51",
+    "vite": "^4.2.0",
+    "vitepress": "1.0.0-alpha.60",
     "workbox-window": "^6.5.4"
   }
 }
