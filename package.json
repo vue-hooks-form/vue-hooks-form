@@ -19,10 +19,11 @@
     "form"
   ],
   "scripts": {
-    "build": "pnpm run build:core && pnpm run build:class-validator && pnpm run build:yup",
+    "build": "pnpm run build:core && pnpm run build:class-validator && pnpm run build:yup && pnpm run build:zod",
     "build:core": "pnpm -C packages/core run build",
     "build:class-validator": "pnpm -C packages/class-validator run build",
     "build:yup": "pnpm -C packages/yup run build",
+    "build:zod": "pnpm -C packages/zod run build",
     "test": "pnpm -C test run test",
     "play": "pnpm -C playground run dev",
     "docs:dev": "pnpm -C docs run dev",
