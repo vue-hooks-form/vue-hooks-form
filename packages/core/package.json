@@ -1,6 +1,6 @@
 {
   "name": "@vue-hooks-form/core",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Vue Composition API for validating form.",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",

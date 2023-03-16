@@ -1,6 +1,6 @@
 {
   "name": "@vue-hooks-form/monorepo",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": "true",
   "description": "Vue Composition API for validating form.",
   "author": "Elone Hoo <hi@elonehoo.me>",
