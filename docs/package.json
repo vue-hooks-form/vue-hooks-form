@@ -18,8 +18,8 @@
     "jiti": "^1.18.2",
     "unocss": "^0.50.6",
     "unplugin-vue-components": "^0.24.1",
-    "vite": "^4.2.0",
-    "vitepress": "1.0.0-alpha.60",
+    "vite": "^4.2.1",
+    "vitepress": "1.0.0-alpha.63",
     "workbox-window": "^6.5.4"
   }
 }
