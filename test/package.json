@@ -15,15 +15,15 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue": "^4.1.0",
     "@vue-hooks-form/class-validator": "workspace:*",
     "@vue-hooks-form/core": "workspace:*",
     "@vue-hooks-form/yup": "workspace:*",
-    "@vue/test-utils": "^2.3.1",
-    "vite": "^4.1.4",
-    "vitest": "^0.29.2"
+    "@vue/test-utils": "^2.3.2",
+    "vite": "^4.2.1",
+    "vitest": "^0.30.0"
   },
   "devDependencies": {
-    "jsdom": "^21.1.0"
+    "jsdom": "^21.1.1"
   }
 }
