@@ -55,6 +55,13 @@ const {
 </template>
 ```
 
+## Credits
+
+Thanks to:
+
+- [react-hook-form](https://github.com/react-hook-form/react-hook-form)
+- [vue-use-form](https://github.com/vue-use-form/vue-use-form)
+
 ## License
 
 [MIT](./LICENSE) License © 2023-Present [Elone Hoo](https://github.com/elonehoo)
