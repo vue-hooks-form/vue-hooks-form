@@ -12,7 +12,7 @@ Inspired by <a href="https://github.com/react-hook-form/react-hook-form">react-h
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@vue-hooks-form/core"><img src="https://img.shields.io/npm/v/@vue-hooks-form/core?color=43B36B&label="></a>
-<p>
+</p>
 
 <p align="center">
  <a href="https://vue-hooks-form.elonehoo.me">Documentation</a> | <a href="https://vue-hooks-form.elonehoo.me/guide/">Getting Started</a> | <a href="https://stackblitz.com/edit/vue-hooks-form?file=src/App.vue">Playground</a>
