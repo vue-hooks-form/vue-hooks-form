@@ -15,7 +15,7 @@ Inspired by <a href="https://github.com/react-hook-form/react-hook-form">react-h
 </p>
 
 <p align="center">
- <a href="https://vue-hooks-form.elonehoo.me">Documentation</a> | <a href="https://vue-hooks-form.elonehoo.me/guide/">Getting Started</a> | <a href="https://stackblitz.com/edit/vue-hooks-form?file=src/App.vue">Playground</a>
+ <a href="https://form.elonehoo.me">Documentation</a> | <a href="https://form.elonehoo.me/guide/">Getting Started</a> | <a href="https://stackblitz.com/edit/vue-hooks-form?file=src/App.vue">Playground</a>
 </p>
 
 <br>
