@@ -1,6 +1,6 @@
 {
   "name": "@vue-hooks-form/zod",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "zod resolver for vue-hooks-form",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
