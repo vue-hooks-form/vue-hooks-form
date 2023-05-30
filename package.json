@@ -42,7 +42,7 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.1",
+    "@antfu/eslint-config": "^0.39.3",
     "@types/node": "^20.1.5",
     "bumpp": "^9.1.0",
     "chalk": "^5.2.0",
