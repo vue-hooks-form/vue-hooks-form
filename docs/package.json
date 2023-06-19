@@ -9,10 +9,10 @@
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
   "dependencies": {
-    "@iconify-json/carbon": "^1.1.17",
+    "@iconify-json/carbon": "^1.1.18",
     "@unocss/reset": "^0.53.1",
     "@vitejs/plugin-vue": "^4.2.3",
-    "@vueuse/core": "^10.1.2",
+    "@vueuse/core": "^10.2.0",
     "esno": "^0.16.3",
     "https-localhost": "^4.7.1",
     "jiti": "^1.18.2",
