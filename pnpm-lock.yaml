@@ -82,8 +82,8 @@ importers:
         specifier: 1.0.0-beta.4
         version: 1.0.0-beta.4(@algolia/client-search@4.17.0)(@types/node@20.3.3)(search-insights@2.6.0)
       workbox-window:
-        specifier: ^6.6.0
-        version: 6.6.0
+        specifier: ^7.0.0
+        version: 7.0.0
 
   packages/class-validator:
     dependencies:
@@ -6113,15 +6113,15 @@ packages:
       stackback: 0.0.2
     dev: false
 
-  /workbox-core@6.6.0:
-    resolution: {integrity: sha512-GDtFRF7Yg3DD859PMbPAYPeJyg5gJYXuBQAC+wyrWuuXgpfoOrIQIvFRZnQ7+czTIQjIr1DhLEGFzZanAT/3bQ==}
+  /workbox-core@7.0.0:
+    resolution: {integrity: sha512-81JkAAZtfVP8darBpfRTovHg8DGAVrKFgHpOArZbdFd78VqHr5Iw65f2guwjE2NlCFbPFDoez3D3/6ZvhI/rwQ==}
     dev: false
 
-  /workbox-window@6.6.0:
-    resolution: {integrity: sha512-L4N9+vka17d16geaJXXRjENLFldvkWy7JyGxElRD0JvBxvFEd8LOhr+uXCcar/NzAmIBRv9EZ+M+Qr4mOoBITw==}
+  /workbox-window@7.0.0:
+    resolution: {integrity: sha512-j7P/bsAWE/a7sxqTzXo3P2ALb1reTfZdvVp6OJ/uLr/C2kZAMvjeWGm8V4htQhor7DOvYg0sSbFN2+flT5U0qA==}
     dependencies:
       '@types/trusted-types': 2.0.3
-      workbox-core: 6.6.0
+      workbox-core: 7.0.0
     dev: false
 
   /wrap-ansi@7.0.0:
