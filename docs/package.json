@@ -15,11 +15,11 @@
     "@vueuse/core": "^10.2.1",
     "esno": "^0.16.3",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.18.2",
+    "jiti": "^1.19.1",
     "unocss": "^0.53.4",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.3.9",
-    "vitepress": "1.0.0-beta.4",
-    "workbox-window": "^6.6.0"
+    "vitepress": "1.0.0-beta.5",
+    "workbox-window": "^7.0.0"
   }
 }
