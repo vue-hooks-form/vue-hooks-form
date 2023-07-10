@@ -10,15 +10,15 @@
   "license": "MIT",
   "dependencies": {
     "@iconify-json/carbon": "^1.1.18",
-    "@unocss/reset": "^0.53.4",
+    "@unocss/reset": "^0.53.5",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vueuse/core": "^10.2.1",
     "esno": "^0.16.3",
     "https-localhost": "^4.7.1",
     "jiti": "^1.19.1",
-    "unocss": "^0.53.4",
+    "unocss": "^0.53.5",
     "unplugin-vue-components": "^0.25.1",
-    "vite": "^4.3.9",
+    "vite": "^4.4.2",
     "vitepress": "1.0.0-beta.5",
     "workbox-window": "^7.0.0"
   }
