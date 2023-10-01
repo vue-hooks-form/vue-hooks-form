@@ -10,17 +10,17 @@
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
   "dependencies": {
-    "@iconify-json/carbon": "^1.1.19",
-    "@unocss/reset": "^0.54.1",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "@vueuse/core": "^10.3.0",
+    "@iconify-json/carbon": "^1.1.21",
+    "@unocss/reset": "^0.56.4",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vueuse/core": "^10.4.1",
     "esno": "^0.17.0",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.19.1",
-    "unocss": "^0.54.1",
-    "unplugin-vue-components": "^0.25.1",
-    "vite": "^4.4.8",
-    "vitepress": "1.0.0-beta.7",
+    "jiti": "^1.20.0",
+    "unocss": "^0.56.4",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.4.9",
+    "vitepress": "1.0.0-rc.20",
     "workbox-window": "^7.0.0"
   }
 }
