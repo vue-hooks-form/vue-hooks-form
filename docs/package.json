@@ -1,5 +1,6 @@
 {
   "name": "@vue-hooks-form/docs",
+  "type": "module",
   "private": "true",
   "scripts": {
     "dev": "vitepress",
