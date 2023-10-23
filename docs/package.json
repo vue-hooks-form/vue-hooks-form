@@ -19,8 +19,8 @@
     "jiti": "^1.20.0",
     "unocss": "^0.56.5",
     "unplugin-vue-components": "^0.25.2",
-    "vite": "^4.4.11",
-    "vitepress": "1.0.0-rc.22",
+    "vite": "^4.5.0",
+    "vitepress": "1.0.0-rc.23",
     "workbox-window": "^7.0.0"
   }
 }
