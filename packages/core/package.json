@@ -43,8 +43,8 @@
     "lodash.unset": "^4.5.2"
   },
   "devDependencies": {
-    "@types/lodash.get": "^4.4.7",
-    "@types/lodash.setwith": "^4.3.7",
-    "@types/lodash.unset": "^4.5.7"
+    "@types/lodash.get": "^4.4.8",
+    "@types/lodash.setwith": "^4.3.8",
+    "@types/lodash.unset": "^4.5.8"
   }
 }
