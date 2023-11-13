@@ -19,8 +19,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "main": "./dist/index.js",
@@ -43,8 +43,8 @@
     "lodash.unset": "^4.5.2"
   },
   "devDependencies": {
-    "@types/lodash.get": "^4.4.8",
-    "@types/lodash.setwith": "^4.3.8",
-    "@types/lodash.unset": "^4.5.8"
+    "@types/lodash.get": "^4.4.9",
+    "@types/lodash.setwith": "^4.3.9",
+    "@types/lodash.unset": "^4.5.9"
   }
 }

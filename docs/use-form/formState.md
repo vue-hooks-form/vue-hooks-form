@@ -24,14 +24,14 @@ type FormState<T> = toRefs<{
 
 ```vue
 <script setup>
-  import { useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { errors },
-    isExistInErrors,
-  } = useForm({
-    mode: 'onChange'
-  })
+import { useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { errors },
+  isExistInErrors,
+} = useForm({
+  mode: 'onChange'
+})
 </script>
 
 <template>
@@ -65,15 +65,15 @@ You may hate the way of access these props with `.value`, if so, you can use wit
 
 ```vue
 <script setup lang="ts">
-  const {
-    register,
-    formState: { errors },
-    isExistInErrors,
-  } = $(useForm({
-    mode: 'onChange'
-  }))
-  // no need to access with `.value`
-  console.log(errors)
+const {
+  register,
+  formState: { errors },
+  isExistInErrors,
+} = $(useForm({
+  mode: 'onChange'
+}))
+// no need to access with `.value`
+console.log(errors)
 </script>
 ```
 
@@ -91,14 +91,14 @@ const isDirty: boolean = false
 
 ```vue
 <script setup lang="ts">
-  const {
-    formState,
-    setValue,
-  } = useForm({ defaultValues: { test: '' } })
-  // formState.isDirty: true
-  setValue('test', 'change')
-  // formState.isDirty: false because there getValues() === defaultValues
-  setValue('test', '')
+const {
+  formState,
+  setValue,
+} = useForm({ defaultValues: { test: '' } })
+// formState.isDirty: true
+setValue('test', 'change')
+// formState.isDirty: false because there getValues() === defaultValues
+setValue('test', '')
 </script>
 ```
 
@@ -116,9 +116,9 @@ const dirtyFields: Record<string, boolean> = {}
 
 ```vue
 <script setup lang="ts">
-  const {
-    formState: { dirtyFields }
-  } = $(useForm())
+const {
+  formState: { dirtyFields }
+} = $(useForm())
 </script>
 ```
 
@@ -135,14 +135,14 @@ const dirtyFields: Record<string, boolean> = options.defaultValues || {}
 
 ```vue
 <script setup>
-  import { useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { defaultValues },
-    reset,
-  } = $(useForm({
-    mode: 'onChange'
-  }))
+import { useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { defaultValues },
+  reset,
+} = $(useForm({
+  mode: 'onChange'
+}))
 </script>
 
 <template>
@@ -167,18 +167,18 @@ const isSubmitted: boolean = false
 
 ```vue
 <script setup>
-  import { createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { isSubmitted },
-    handleSubmit,
-    reset,
-  } = useForm({
-    mode: 'onChange'
-  })
-  const onSubmit = createSubmitHandler((data) => {
-    alert('submit success')
-  })
+import { createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { isSubmitted },
+  handleSubmit,
+  reset,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  alert('submit success')
+})
 </script>
 
 <template>
@@ -211,18 +211,18 @@ const isSubmitted: boolean = false
 
 ```vue
 <script setup>
-  import { createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { isSubmitSuccessful },
-    handleSubmit,
-    reset,
-  } = useForm({
-    mode: 'onChange'
-  })
-  const onSubmit = createSubmitHandler((data) => {
-    alert('submit success')
-  })
+import { createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { isSubmitSuccessful },
+  handleSubmit,
+  reset,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  alert('submit success')
+})
 </script>
 
 <template>
@@ -253,17 +253,17 @@ const submitCount: number = 0
 
 ```vue
 <script setup>
-  import { createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { submitCount },
-    handleSubmit,
-  } = useForm({
-    mode: 'onChange'
-  })
-  const onSubmit = createSubmitHandler((data) => {
-    alert('submit success')
-  })
+import { createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { submitCount },
+  handleSubmit,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  alert('submit success')
+})
 </script>
 
 <template>
@@ -291,20 +291,20 @@ const isValid: boolean = false
 
 ```vue
 <script setup>
-  import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState,
-    handleSubmit,
-  } = useForm({
-    mode: 'onChange'
-  })
-  const onSubmit = createSubmitHandler((data) => {
-    alert('submit success')
-  })
-  const onError = createErrorHandler((errors) => {
-    alert('submit failed')
-  })
+import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState,
+  handleSubmit,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  alert('submit success')
+})
+const onError = createErrorHandler((errors) => {
+  alert('submit failed')
+})
 </script>
 
 <template>
@@ -332,26 +332,26 @@ const isValidating: boolean = false
 
 ```vue
 <script setup>
-  import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { isValidating },
-    handleSubmit,
-  } = useForm({
-    mode: 'onChange'
+import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { isValidating },
+  handleSubmit,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  alert('submit success')
+})
+const onError = createErrorHandler((errors) => {
+  alert('submit failed')
+})
+async function validate() {
+  await new Promise((resolve) => {
+    setTimeout(() => resolve(true), 3000)
   })
-  const onSubmit = createSubmitHandler((data) => {
-    alert('submit success')
-  })
-  const onError = createErrorHandler((errors) => {
-    alert('submit failed')
-  })
-  const validate = async () => {
-    await new Promise((resolve) => {
-            setTimeout(() => resolve(true), 3000)
-          })
-    return true
-  }
+  return true
+}
 </script>
 
 <template>
@@ -393,21 +393,21 @@ const errors: Record<string, ErrorMessag> = {}
 
 ```vue
 <script setup>
-  import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    formState: { errors },
-    isExistInErrors,
-    handleSubmit,
-  } = useForm({
-    mode: 'onChange'
-  })
-  const onSubmit = createSubmitHandler((data) => {
-    alert('submit success')
-  })
-  const onError = createErrorHandler((errors) => {
-    alert('submit failed')
-  })
+import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  formState: { errors },
+  isExistInErrors,
+  handleSubmit,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  alert('submit success')
+})
+const onError = createErrorHandler((errors) => {
+  alert('submit failed')
+})
 </script>
 
 <template>

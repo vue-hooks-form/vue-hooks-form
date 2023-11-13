@@ -4,5 +4,5 @@ import '../style/main.css'
 import 'uno.css'
 
 export default {
-  ...Theme
+  ...Theme,
 }

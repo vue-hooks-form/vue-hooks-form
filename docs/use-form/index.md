@@ -79,6 +79,7 @@ const {
   }
 })
 </script>
+
 <template>
   <input :="register('username')">
 </template>
@@ -143,6 +144,7 @@ const {
   resolver: useYupResolver(schema),
 })
 </script>
+
 <template>
   <input :="register('username')">
   <input :="register('email')">

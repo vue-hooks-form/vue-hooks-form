@@ -37,6 +37,7 @@ In `vue-hooks-form`,
 import { useForm } from 'vue-use-form'
 const { register } = useForm<Inputs>()
 </script>
+
 <template>
   <input :="register('firstname')">
 </template>

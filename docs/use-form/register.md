@@ -24,6 +24,7 @@ const {
   formState: { errors }
 } = useForm<{ username: number }>()
 </script>
+
 <template>
   <input :="register('username')">
 </template>
@@ -51,7 +52,7 @@ type Required = string | boolean
 ### Usage
 
 ```vue
-<input :="register('username', { required: true })"/>
+<input :="register('username', { required: true })" />
 ```
 
 ## maxLength
@@ -60,7 +61,7 @@ type Required = string | boolean
 
 ```vue
 <script setup lang="ts">
-  type maxLength = number | { value: number; message: string };
+  type maxLength = number | { value: number; message: string }
 </script>
 ```
 
@@ -86,7 +87,7 @@ The minimum length of the value to accept for this input.
 
 ```vue
 <script setup lang="ts">
-  type minLength = number | { value: number; message: string };
+  type minLength = number | { value: number; message: string }
 </script>
 ```
 ### Usage
@@ -108,7 +109,7 @@ The maximum value to accept for this input.
 
 ```vue
 <script setup lang="ts">
-  type max = number | { value: number; message: string };
+  type max = number | { value: number; message: string }
 </script>
 ```
 ### Usage
@@ -124,7 +125,7 @@ The maximum value to accept for this input.
       },
       valueAsNumber: true
     })"
-  />
+  >
 </template>
 ```
 
@@ -153,7 +154,7 @@ The minimum value to accept for this input.
       },
       valueAsNumber: true
     })"
-  />
+  >
 </template>
 ```
 
@@ -165,7 +166,7 @@ The regex pattern for the input.
 
 ```vue
 <script setup lang="ts">
-  type pattern = RegExp | { value: RegExp; message: string };
+  type pattern = RegExp | { value: RegExp; message: string }
 </script>
 ```
 
@@ -228,8 +229,8 @@ register('test', {
 // object of callback functions
 register('test1', {
   validate: {
-    positive: v => parseInt(v) > 0,
-    lessThanTen: v => parseInt(v) < 10,
+    positive: v => Number.parseInt(v) > 0,
+    lessThanTen: v => Number.parseInt(v) < 10,
     checkUrl: async () => await fetch(),
   }
 })
@@ -287,14 +288,14 @@ Return input value by running through the function.
 
 ```vue
 <script setup lang="ts">
-  type SetValueAs = (value: any) => any;
+  type SetValueAs = (value: any) => any
 </script>
 ```
 ### Usage
 
 ```ts
 register('test', {
-  setValueAs: v => parseInt(v)
+  setValueAs: v => Number.parseInt(v)
 })
 ```
 
@@ -302,22 +303,22 @@ register('test', {
 
 ```vue
 <script setup>
-  import { useForm } from '@vue-hooks-form/core'
-  const { register, handleSubmit } = useForm({
-    defaultValues: {
-      firstName: '',
-      lastName: '',
-      category: '',
-      checkbox: [],
-      radio: ''
-    }
-  })
-  const onSubmit = (data) => {
-    console.log(data)
+import { useForm } from '@vue-hooks-form/core'
+const { register, handleSubmit } = useForm({
+  defaultValues: {
+    firstName: '',
+    lastName: '',
+    category: '',
+    checkbox: [],
+    radio: ''
   }
-  const onError = (errors) => {
-    console.log(errors)
-  }
+})
+function onSubmit(data) {
+  console.log(data)
+}
+function onError(errors) {
+  console.log(errors)
+}
 </script>
 
 <template>

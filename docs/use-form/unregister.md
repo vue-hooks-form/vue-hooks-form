@@ -38,7 +38,7 @@ const keepDirty: boolean = false
 
 ```vue
 <template>
-  <input :="register('test', { keepDirty: true })" />
+  <input :="register('test', { keepDirty: true })">
 </template>
 ```
 
@@ -55,7 +55,7 @@ const keepError: boolean = false
 
 ```vue
 <template>
-  <input :="register('test', { keepError: true })" />
+  <input :="register('test', { keepError: true })">
 </template>
 ```
 
@@ -73,6 +73,6 @@ const keepValue: boolean = false
 
 ```vue
 <template>
-  <input :="register('test', { keepValue: true })" />
+  <input :="register('test', { keepValue: true })">
 </template>
 ```

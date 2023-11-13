@@ -23,7 +23,9 @@ function formatZodErrors<T extends FieldValues>(zodErrors: z.ZodError<any>) {
         ...errors,
         [path]: { message, type },
       }
-    }, {} as FieldErrors<T>)
+    },
+    {} as FieldErrors<T>,
+  )
 
   return errors
 }
@@ -42,7 +44,9 @@ async function parseZodSchema<
 ) {
   const result = await schema[
     options.mode === 'sync' ? 'safeParse' : 'safeParseAsync'
-  ](values, schemaOptions)
+  ](values,
+    schemaOptions,
+  )
 
   return result.success
     ? {} as FieldErrors<T>

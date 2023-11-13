@@ -30,20 +30,21 @@ type SubmitErrorHandler = (errors: Object, e?: Event) => void
 ## Usage
 ```vue
 <script setup>
-  import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
-  const {
-    register,
-    handleSubmit,
-  } = useForm({
-    mode: 'onChange'
-  })
-  const onSubmit = createSubmitHandler((data) => {
-    console.log(data)
-  })
-  const onError = createErrorHandler((errors) => {
-    console.log(errors)
-  })
+import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
+const {
+  register,
+  handleSubmit,
+} = useForm({
+  mode: 'onChange'
+})
+const onSubmit = createSubmitHandler((data) => {
+  console.log(data)
+})
+const onError = createErrorHandler((errors) => {
+  console.log(errors)
+})
 </script>
+
 <template>
   <form @submit.prevent="handleSubmit(onSubmit, onError)()">
     name: <input :="register('name', { required: true })">

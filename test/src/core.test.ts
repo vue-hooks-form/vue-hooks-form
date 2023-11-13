@@ -1,6 +1,6 @@
-import { expect, test } from 'vitest'
+import { expect, it } from 'vitest'
 import { useForm } from '@vue-hooks-form/core'
 
-test('useForm', () => {
+it('useForm', () => {
   expect(useForm).toBeDefined()
 })

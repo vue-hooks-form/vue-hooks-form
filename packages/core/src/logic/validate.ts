@@ -1,7 +1,8 @@
 import { ref, unref } from 'vue'
 import type { FieldError } from '../types/errors'
 import {
-  isEmpty, isEmptyObject,
+  isEmpty,
+  isEmptyObject,
   isFunction,
   isNullOrUndefined,
   isObject,
@@ -61,7 +62,7 @@ export async function validateField(
     if (isFieldElement(el)) {
       if (valueAsNumber) {
         const elVal = (el as HTMLInputElement).value
-        set(field, 'inputValue', ref((el as HTMLInputElement).valueAsNumber || elVal === '' ? elVal : parseFloat(elVal)))
+        set(field, 'inputValue', ref((el as HTMLInputElement).valueAsNumber || elVal === '' ? elVal : Number.parseFloat(elVal)))
       }
       else if (valueAsDate) {
         set(field, 'inputValue', ref((el as HTMLInputElement).valueAsDate || InvalidDate))

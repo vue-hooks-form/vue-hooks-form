@@ -15,5 +15,5 @@ type setFocus = (name: string) => void
 A input field name to focus
 
 ```ts
-  setFocus('test')
+setFocus('test')
 ```

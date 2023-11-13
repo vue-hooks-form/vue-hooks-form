@@ -409,7 +409,7 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
 
     const defaultVal = options?.value
                       || get(_defaultValues, fieldName as string)
-                      || get(_fieldArrayDefaultValues, (fieldName as string).split('.').find(item => isNumber(parseInt(item))))
+                      || get(_fieldArrayDefaultValues, (fieldName as string).split('.').find(item => isNumber(Number.parseInt(item))))
                       || ''
 
     if (!field) {

@@ -2,6 +2,7 @@
 import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
 import { useZodResolver } from '@vue-hooks-form/zod'
 import { z } from 'zod'
+
 const zodSchema = z.object({
   name: z.string().min(3, { message: 'Name must be at least 3 characters long' }),
 })
