@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { createErrorHandler, createSubmitHandler, useForm } from '@vue-hooks-form/core'
 import { useZodResolver } from '@vue-hooks-form/zod'
 import { z } from 'zod'
+import { createErrorHandler, createSubmitHandler, useForm } from '../../packages/core/src/index'
 
 const zodSchema = z.object({
   name: z.string().min(3, { message: 'Name must be at least 3 characters long' }),
@@ -9,11 +9,11 @@ const zodSchema = z.object({
 
 const {
   register,
-  formState: { errors },
+  formState,
   isExistInErrors,
   handleSubmit,
 } = useForm({
-  mode: 'onChange',
+  mode: 'onSubmit',
   resolver: useZodResolver(zodSchema),
 })
 
@@ -27,7 +27,7 @@ const onError = createErrorHandler((errors: any) => {
 </script>
 
 <template>
-  {{ errors }}
+  {{ formState }}
   <form @submit.prevent="handleSubmit(onSubmit, onError)()">
     name: <input :="register('name')">
     <button type="submit">

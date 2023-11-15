@@ -294,8 +294,10 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
         return
       }
       const res: Record<string, any> = {}
-      for (const fieldName in _fields)
+      for (const fieldName in _fields) {
         res[fieldName] = _fields[fieldName].inputValue
+        _options.defaultValues![fieldName] = _fields[fieldName].inputValue.value
+      }
 
       await onSubmit(_fields as UnpackNestedValue<TFieldValues>, e)
       _setFormState({
