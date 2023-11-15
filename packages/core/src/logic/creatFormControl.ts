@@ -46,6 +46,10 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
   type TFormState = FormState<TFieldValues>
   type TFormStateKey = keyof TFormState
 
+  const {
+    onSuccessUpdateDefaultValues = false,
+  } = _options
+
   const _fields = {} as Fields<TFieldValues, FieldsKey>
 
   const _formState = reactive<TFormState>({
@@ -296,7 +300,9 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
       const res: Record<string, any> = {}
       for (const fieldName in _fields) {
         res[fieldName] = _fields[fieldName].inputValue
-        _options.defaultValues![fieldName] = _fields[fieldName].inputValue.value
+
+        if (onSuccessUpdateDefaultValues)
+          _options.defaultValues![fieldName] = _fields[fieldName].inputValue.value
       }
 
       await onSubmit(_fields as UnpackNestedValue<TFieldValues>, e)

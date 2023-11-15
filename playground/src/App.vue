@@ -12,9 +12,14 @@ const {
   formState,
   isExistInErrors,
   handleSubmit,
+  reset,
 } = useForm({
   mode: 'onSubmit',
   resolver: useZodResolver(zodSchema),
+  defaultValues: {
+    name: 'Elone',
+  },
+  onSuccessUpdateDefaultValues: true,
 })
 
 const onSubmit = createSubmitHandler((data: any) => {
@@ -34,4 +39,7 @@ const onError = createErrorHandler((errors: any) => {
       submit
     </button>
   </form>
+  <button @click="reset()">
+    Reset
+  </button>
 </template>
