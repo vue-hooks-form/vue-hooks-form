@@ -33,14 +33,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "peerDependencies": {
-    "vue": "^3.2.45"
-  },
-  "dependencies": {
-    "magic-string": "^0.30.5",
-    "typescript": "^5.2.2",
-    "vue": "^3.3.8"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^1.1.1",
     "@types/node": "^20.9.0",
@@ -49,7 +41,11 @@
     "eslint": "^8.53.0",
     "esno": "^4.0.0",
     "fast-glob": "^3.3.2",
+    "magic-string": "^0.30.5",
     "rimraf": "^5.0.5",
-    "tsup": "^7.2.0"
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vue": "^3.3.8"
   }
 }
