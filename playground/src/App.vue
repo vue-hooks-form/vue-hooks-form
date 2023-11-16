@@ -10,7 +10,6 @@ const zodSchema = z.object({
 const {
   register,
   formState,
-  isExistInErrors,
   handleSubmit,
   reset,
 } = useForm({

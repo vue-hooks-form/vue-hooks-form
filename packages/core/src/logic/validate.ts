@@ -92,7 +92,7 @@ export async function validateField(
       const { value: maxValue, message: maxMsg } = getValueAndMessage(max)
       const { value: minValue, message: minMsg } = getValueAndMessage(min)
 
-      if (!isNaN(unrefInputVal)) {
+      if (!Number.isNaN(unrefInputVal)) {
         if (minValue && unrefInputVal < minValue)
           exceedMin = true
         if (maxValue && unrefInputVal > maxValue)

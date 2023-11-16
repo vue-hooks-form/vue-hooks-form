@@ -25,4 +25,5 @@ export function getFormEl(elRef: MaybeRef<any> | InputEvent): FieldElement | und
         return val.querySelectorAll('input, textarea, select')[0] as FieldElement
     }
   }
+  return undefined
 }
