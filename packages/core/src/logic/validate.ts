@@ -8,8 +8,8 @@ import {
   isObject,
   isRegex,
   isString,
-  set,
 } from '../utils'
+import set from 'lodash.setwith'
 import type { Field, FieldElement } from '../types/filed'
 import { isCheckBoxInput, isRadioInput } from '../utils/fieldElement'
 import { getValueAndMessage } from '../utils/transformMessage'
