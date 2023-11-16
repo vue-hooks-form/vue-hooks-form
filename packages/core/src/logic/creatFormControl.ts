@@ -1,4 +1,7 @@
 import { nextTick, reactive, ref, unref } from 'vue'
+import set from 'lodash.setwith'
+import get from 'lodash.get'
+import unset from 'lodash.unset'
 import { VALIDATION_MODE } from '../shared/constant'
 import type { FieldError, FieldErrors } from '../types/errors'
 import type { Field, FieldElement, FieldValues, Fields } from '../types/filed'
@@ -23,7 +26,7 @@ import type {
   UseFormUnregister,
 } from '../types/form'
 import type { DefaultValues, UnpackNestedValue } from '../types/utils'
-import { get, isArray, isEmptyObject, isFunction, isNullOrUndefined, isNumber, isString, isUndefined, set, unset } from '../utils'
+import { isArray, isEmptyObject, isFunction, isNullOrUndefined, isNumber, isString, isUndefined } from '../utils'
 
 import {
   createErrorHandler as createErrorHandlerUtil,
@@ -36,7 +39,6 @@ import { getFormEl } from '../utils/getFormEl'
 import { getValidationMode } from '../utils/getValidationMode'
 import { isFieldElement } from '../utils/isFieldElement'
 import type { RegisterOptions } from '../types/validator'
-import { warn } from '../utils/warn'
 import { handleValidateError, validateField } from './validate'
 
 export function creatFormControl<TFieldValues extends FieldValues = FieldValues>(
@@ -45,6 +47,10 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
   type FieldsKey = keyof TFieldValues
   type TFormState = FormState<TFieldValues>
   type TFormStateKey = keyof TFormState
+
+  const {
+    onSuccessUpdateDefaultValues = false,
+  } = _options
 
   const _fields = {} as Fields<TFieldValues, FieldsKey>
 
@@ -294,8 +300,12 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
         return
       }
       const res: Record<string, any> = {}
-      for (const fieldName in _fields)
+      for (const fieldName in _fields) {
         res[fieldName] = _fields[fieldName].inputValue
+
+        if (onSuccessUpdateDefaultValues)
+          _options.defaultValues![fieldName] = _fields[fieldName].inputValue.value
+      }
 
       await onSubmit(_fields as UnpackNestedValue<TFieldValues>, e)
       _setFormState({
@@ -342,7 +352,7 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
 
   const setValue: UseFormSetValue<TFieldValues, FieldsKey> = async (name, value, config = {}) => {
     if (isNullOrUndefined(_fields[name])) {
-      warn(`setValue cannot set not exist field #${name as string}`)
+      console.warn(`setValue cannot set not exist field #${name as string}`)
       return
     }
 
@@ -409,7 +419,7 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
 
     const defaultVal = options?.value
                       || get(_defaultValues, fieldName as string)
-                      || get(_fieldArrayDefaultValues, (fieldName as string).split('.').find(item => isNumber(Number.parseInt(item))))
+                      || get(_fieldArrayDefaultValues, (fieldName as string).split('.').find(item => isNumber(Number.parseInt(item)))!)
                       || ''
 
     if (!field) {
@@ -418,7 +428,7 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
         rule: options,
         isDirty: false,
         isUnregistered: false,
-        el: ref(null),
+        el: ref<any>(null),
       })
 
       field = get(_fields, fieldName)
@@ -466,7 +476,7 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
       ...vModelBinding === 'modelValue'
       && {
         value: field.inputValue.value,
-        onInput: (e) => {
+        onInput: (e: any) => {
           if (_fields[fieldName].isUnregistered)
             return
 
@@ -491,8 +501,8 @@ export function creatFormControl<TFieldValues extends FieldValues = FieldValues>
   }
 
   const unregister: UseFormUnregister<TFieldValues> = (fieldName, options = {}) => {
-    if (isNullOrUndefined(_fields[fieldName])) {
-      warn(`cannot unregister not exist field #${fieldName as string}`)
+    if (isNullOrUndefined(_fields[fieldName!])) {
+      console.warn(`cannot unregister not exist field #${fieldName as string}`)
       return
     }
 

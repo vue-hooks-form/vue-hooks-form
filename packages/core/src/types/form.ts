@@ -19,6 +19,7 @@ export interface UseFormProps<TFieldValues extends object> {
   shouldUnregister: boolean
   criteriaMode: CriteriaMode
   delayError: number
+  onSuccessUpdateDefaultValues: boolean
 }
 
 export type KeepStateOptions = Partial<{

@@ -9,7 +9,8 @@ import type {
   UseFieldArraySwap,
 } from '../types/fieldArray'
 import type { FieldValues } from '../types/filed'
-import { isArray, set } from '../utils'
+import { isArray } from '../utils'
+import set from 'lodash.setwith'
 
 export function createFieldArray<TFieldsValues extends FieldValues = FieldValues>(
   _options: UseFieldArrayProps<TFieldsValues>,

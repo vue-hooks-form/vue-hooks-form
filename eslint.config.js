@@ -1,3 +1,17 @@
-const antfu = require('@antfu/eslint-config').default
+// eslint.config.js
+import antfu from '@antfu/eslint-config'
 
-module.exports = antfu()
+export default antfu({
+  rules: {
+    'no-console': 'off',
+  },
+  ignores: [
+    'dist',
+    'public',
+    '.github',
+    '.vscode',
+    'docs',
+    'playground',
+    '*.md',
+  ],
+})

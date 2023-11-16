@@ -20,4 +20,5 @@ export function getValidatorError(
       message: result,
     }
   }
+  return undefined
 }

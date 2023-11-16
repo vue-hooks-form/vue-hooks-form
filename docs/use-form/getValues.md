@@ -23,6 +23,6 @@ getValues(['test1', 'test2'])
 ```ts
 register('root.test1')
 register('root.test2')
-getValues('root')	 // { test1: '', test2: ''}
+getValues('root') // { test1: '', test2: ''}
 ```
 

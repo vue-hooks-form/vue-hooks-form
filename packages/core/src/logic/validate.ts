@@ -8,8 +8,8 @@ import {
   isObject,
   isRegex,
   isString,
-  set,
 } from '../utils'
+import set from 'lodash.setwith'
 import type { Field, FieldElement } from '../types/filed'
 import { isCheckBoxInput, isRadioInput } from '../utils/fieldElement'
 import { getValueAndMessage } from '../utils/transformMessage'
@@ -92,7 +92,7 @@ export async function validateField(
       const { value: maxValue, message: maxMsg } = getValueAndMessage(max)
       const { value: minValue, message: minMsg } = getValueAndMessage(min)
 
-      if (!isNaN(unrefInputVal)) {
+      if (!Number.isNaN(unrefInputVal)) {
         if (minValue && unrefInputVal < minValue)
           exceedMin = true
         if (maxValue && unrefInputVal > maxValue)
