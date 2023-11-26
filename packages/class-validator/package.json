@@ -1,6 +1,6 @@
 {
   "name": "@vue-hooks-form/class-validator",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "class-validator resolver for vue-hooks-form",
   "author": "Elone Hoo <hi@gmail.com>",
   "license": "MIT",
