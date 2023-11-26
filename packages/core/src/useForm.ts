@@ -1,7 +1,7 @@
 import type { UseFormProps } from './types/form'
 import type { FieldValues } from './types/filed'
 
-import { creatFormControl } from './logic/creatFormControl'
+import { createFormControl } from './logic/createFormControl'
 
 export function useForm<TFieldValues extends FieldValues = FieldValues>(
   props: Partial<UseFormProps<TFieldValues>> = {},
@@ -16,6 +16,6 @@ export function useForm<TFieldValues extends FieldValues = FieldValues>(
     ...props,
   }
   return {
-    ...creatFormControl<TFieldValues>(props as UseFormProps<TFieldValues>),
+    ...createFormControl<TFieldValues>(props as UseFormProps<TFieldValues>),
   }
 }
