@@ -41,7 +41,7 @@ import { isFieldElement } from '../utils/isFieldElement'
 import type { RegisterOptions } from '../types/validator'
 import { handleValidateError, validateField } from './validate'
 
-export function creatFormControl<TFieldValues extends FieldValues = FieldValues>(
+export function createFormControl<TFieldValues extends FieldValues = FieldValues>(
   _options: Partial<UseFormProps<TFieldValues>>,
 ): UseFormReturn<TFieldValues> {
   type FieldsKey = keyof TFieldValues
