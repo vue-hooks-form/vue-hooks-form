@@ -10,16 +10,16 @@
     "serve": "vitepress serve"
   },
   "dependencies": {
-    "@iconify-json/carbon": "^1.1.24",
+    "@iconify-json/carbon": "^1.1.25",
     "@unocss/reset": "^0.58.0",
-    "@vitejs/plugin-vue": "^4.5.1",
-    "@vueuse/core": "^10.6.1",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "@vueuse/core": "^10.7.0",
     "esno": "^4.0.0",
     "https-localhost": "^4.7.1",
     "jiti": "^1.21.0",
     "unocss": "^0.58.0",
     "unplugin-vue-components": "^0.26.0",
-    "vite": "^5.0.4",
+    "vite": "^5.0.7",
     "vitepress": "1.0.0-rc.31",
     "workbox-window": "^7.0.0"
   }
