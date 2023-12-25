@@ -10,7 +10,7 @@
     "serve": "vitepress serve"
   },
   "dependencies": {
-    "@iconify-json/carbon": "^1.1.26",
+    "@iconify-json/carbon": "^1.1.27",
     "@unocss/reset": "^0.58.0",
     "@vitejs/plugin-vue": "^4.5.2",
     "@vueuse/core": "^10.7.0",
