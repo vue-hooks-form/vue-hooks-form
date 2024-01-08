@@ -11,16 +11,16 @@
   },
   "dependencies": {
     "@iconify-json/carbon": "^1.1.27",
-    "@unocss/reset": "^0.58.2",
+    "@unocss/reset": "^0.58.3",
     "@vitejs/plugin-vue": "^4.6.2",
     "@vueuse/core": "^10.7.1",
     "esno": "^4.0.0",
     "https-localhost": "^4.7.1",
     "jiti": "^1.21.0",
-    "unocss": "^0.58.2",
+    "unocss": "^0.58.3",
     "unplugin-vue-components": "^0.26.0",
-    "vite": "^5.0.10",
-    "vitepress": "1.0.0-rc.34",
+    "vite": "^5.0.11",
+    "vitepress": "1.0.0-rc.35",
     "workbox-window": "^7.0.0"
   }
 }
