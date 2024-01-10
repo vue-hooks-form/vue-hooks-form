@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "^4.6.2",
+    "@vitejs/plugin-vue": "^5.0.2",
     "@vue-hooks-form/class-validator": "workspace:*",
     "@vue-hooks-form/core": "workspace:*",
     "@vue-hooks-form/yup": "workspace:*",
