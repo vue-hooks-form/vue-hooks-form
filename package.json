@@ -35,7 +35,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.3",
+    "@antfu/eslint-config": "^2.22.2",
     "@types/node": "^20.14.10",
     "bumpp": "^9.4.1",
     "chalk": "^5.3.0",
@@ -43,7 +43,7 @@
     "esno": "^4.7.0",
     "fast-glob": "^3.3.2",
     "magic-string": "^0.30.10",
-    "rimraf": "^5.0.8",
+    "rimraf": "^5.0.9",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3",
     "unbuild": "^2.0.0",
