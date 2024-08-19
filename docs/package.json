@@ -13,7 +13,7 @@
     "@iconify-json/carbon": "^1.1.37",
     "@unocss/reset": "^0.62.2",
     "@vitejs/plugin-vue": "^5.1.2",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.0",
     "esno": "^4.7.0",
     "https-localhost": "^4.7.1",
     "jiti": "^1.21.6",
