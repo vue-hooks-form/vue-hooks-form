@@ -35,9 +35,9 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.25.1",
-    "@types/node": "^20.14.15",
-    "bumpp": "^9.4.2",
+    "@antfu/eslint-config": "^2.26.0",
+    "@types/node": "^20.16.1",
+    "bumpp": "^9.5.1",
     "chalk": "^5.3.0",
     "eslint": "^9.9.0",
     "esno": "^4.7.0",
@@ -47,6 +47,6 @@
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "unbuild": "^2.0.0",
-    "vue": "^3.4.37"
+    "vue": "^3.4.38"
   }
 }
