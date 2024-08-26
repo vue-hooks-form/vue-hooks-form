@@ -35,11 +35,11 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.26.0",
+    "@antfu/eslint-config": "^2.27.1",
     "@types/node": "^20.16.1",
-    "bumpp": "^9.5.1",
+    "bumpp": "^9.5.2",
     "chalk": "^5.3.0",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "esno": "^4.7.0",
     "fast-glob": "^3.3.2",
     "magic-string": "^0.30.11",
