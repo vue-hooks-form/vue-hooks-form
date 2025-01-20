@@ -36,8 +36,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.14.0",
-    "@types/node": "^22.10.5",
-    "bumpp": "^9.10.0",
+    "@types/node": "^22.10.7",
+    "bumpp": "^9.10.1",
     "chalk": "^5.4.1",
     "eslint": "^9.18.0",
     "esno": "^4.8.0",
@@ -46,7 +46,7 @@
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
-    "unbuild": "^3.3.0",
+    "unbuild": "^3.3.1",
     "vue": "^3.5.13"
   }
 }
