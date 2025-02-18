@@ -10,13 +10,13 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.2.1
-        version: 4.2.1(@typescript-eslint/utils@8.21.0)(@vue/compiler-sfc@3.5.13)(eslint@9.20.1)(typescript@5.7.3)
+        version: 4.2.1(@typescript-eslint/utils@8.24.0)(@vue/compiler-sfc@3.5.13)(eslint@9.20.1)(typescript@5.7.3)
       '@types/node':
         specifier: ^22.13.4
         version: 22.13.4
       bumpp:
-        specifier: ^9.11.1
-        version: 9.11.1
+        specifier: ^10.0.3
+        version: 10.0.3
       chalk:
         specifier: ^5.4.1
         version: 5.4.1
@@ -371,7 +371,7 @@ packages:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  /@antfu/eslint-config@4.2.1(@typescript-eslint/utils@8.21.0)(@vue/compiler-sfc@3.5.13)(eslint@9.20.1)(typescript@5.7.3):
+  /@antfu/eslint-config@4.2.1(@typescript-eslint/utils@8.24.0)(@vue/compiler-sfc@3.5.13)(eslint@9.20.1)(typescript@5.7.3):
     resolution: {integrity: sha512-FZBO4IooaWr5r7SKLC9XTsRR8B4+yLC2p5ACOQ1dEDe1hs3sj8F5nySs06mGDPRIrzotluG/FPbEZl6Gwr4AzQ==}
     hasBin: true
     peerDependencies:
@@ -424,7 +424,7 @@ packages:
       '@stylistic/eslint-plugin': 4.0.0-beta.1(eslint@9.20.1)(typescript@5.7.3)
       '@typescript-eslint/eslint-plugin': 8.24.0(@typescript-eslint/parser@8.24.0)(eslint@9.20.1)(typescript@5.7.3)
       '@typescript-eslint/parser': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
-      '@vitest/eslint-plugin': 1.1.31(@typescript-eslint/utils@8.21.0)(eslint@9.20.1)(typescript@5.7.3)
+      '@vitest/eslint-plugin': 1.1.31(@typescript-eslint/utils@8.24.0)(eslint@9.20.1)(typescript@5.7.3)
       ansis: 3.15.0
       eslint: 9.20.1
       eslint-config-flat-gitignore: 2.0.0(eslint@9.20.1)
@@ -2602,7 +2602,7 @@ packages:
       vue: 3.5.13(typescript@5.7.3)
     dev: false
 
-  /@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.21.0)(eslint@9.20.1)(typescript@5.7.3):
+  /@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.24.0)(eslint@9.20.1)(typescript@5.7.3):
     resolution: {integrity: sha512-xlsLr+e+AXZ/00eVZCtNmMeCJoJaRCoLDiAgLcxgQjSS1EertieB2MUHf8xIqPKs9lECc/UpL+y1xDcpvi02hw==}
     peerDependencies:
       '@typescript-eslint/utils': '>= 8.0'
@@ -2615,7 +2615,7 @@ packages:
       vitest:
         optional: true
     dependencies:
-      '@typescript-eslint/utils': 8.21.0(eslint@9.20.1)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
       eslint: 9.20.1
       typescript: 5.7.3
     dev: true
@@ -3119,6 +3119,10 @@ packages:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: true
 
+  /args-tokenizer@0.3.0:
+    resolution: {integrity: sha512-xXAd7G2Mll5W8uo37GETpQ2VrE84M181Z7ugHFGQnJZ50M2mbOv0osSZ9VsSgPfJQ+LVG0prSi0th+ELMsno7Q==}
+    dev: true
+
   /array-flatten@1.1.1:
     resolution: {integrity: sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==}
     dev: false
@@ -3224,20 +3228,20 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /bumpp@9.11.1:
-    resolution: {integrity: sha512-jBHlab9NnRwrpHsockb5E+MBo0os2yS6S7i3cnN8hB6EkTardKQotmd0CFdOc8pubLz2fxj2AD6RGtrySVG6Mw==}
-    engines: {node: '>=10'}
+  /bumpp@10.0.3:
+    resolution: {integrity: sha512-5ONBZenNf9yfTIl2vFvDEfeeioidt0fG10SzjHQw50BRxOmXzsdY+lab1+SDMfiW6UyJ1xQqzFymcy5wa8YhTA==}
+    engines: {node: '>=18'}
     hasBin: true
     dependencies:
+      args-tokenizer: 0.3.0
       c12: 2.0.1
       cac: 6.7.14
       escalade: 3.2.0
       js-yaml: 4.1.0
       jsonc-parser: 3.3.1
-      package-manager-detector: 0.2.8
+      package-manager-detector: 0.2.9
       prompts: 2.4.2
-      semver: 7.6.3
-      tiny-conventional-commits-parser: 0.0.1
+      semver: 7.7.1
       tinyexec: 0.3.2
       tinyglobby: 0.2.10
     transitivePeerDependencies:
@@ -6091,7 +6095,7 @@ packages:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
     dependencies:
       acorn: 8.14.0
-      pathe: 2.0.1
+      pathe: 2.0.3
       pkg-types: 1.3.0
       ufo: 1.5.4
 
@@ -6327,6 +6331,10 @@ packages:
   /package-manager-detector@0.2.8:
     resolution: {integrity: sha512-ts9KSdroZisdvKMWVAVCXiKqnqNfXz4+IbrBG8/BWx/TR5le+jfenvoBuIZ6UWM9nz47W7AbD9qYfAwfWMIwzA==}
 
+  /package-manager-detector@0.2.9:
+    resolution: {integrity: sha512-+vYvA/Y31l8Zk8dwxHhL3JfTuHPm6tlxM2A3GeQyl7ovYnSp1+mzAxClxaOr0qO1TtPxbQxetI7v5XqKLJZk7Q==}
+    dev: true
+
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -6419,10 +6427,10 @@ packages:
 
   /pathe@2.0.1:
     resolution: {integrity: sha512-6jpjMpOth5S9ITVu5clZ7NOgHNsv5vRQdheL9ztp2vZmM6fRbLvyua1tiBIL4lk8SAe3ARzeXEly6siXCjDHDw==}
+    dev: true
 
   /pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
-    dev: true
 
   /pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
@@ -7188,6 +7196,12 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  /semver@7.7.1:
+    resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dev: true
+
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -7583,10 +7597,6 @@ packages:
   /tiny-case@1.0.3:
     resolution: {integrity: sha512-Eet/eeMhkO6TX8mnUteS9zgPbUMQa4I6Kkp5ORiBD5476/m+PIRiumP5tmh5ioJpH7k51Kehawy2UDfsnxxY8Q==}
     dev: false
-
-  /tiny-conventional-commits-parser@0.0.1:
-    resolution: {integrity: sha512-N5+AZWdBeHNSgTIaxvx0+9mFrnW4H1BbjQ84H7i3TuWSkno8Hju886hLaHZhE/hYEKrfrfl/uHurqpZJHDuYGQ==}
-    dev: true
 
   /tinybench@2.5.1:
     resolution: {integrity: sha512-65NKvSuAVDP/n4CqH+a9w2kTlLReS9vhsAP06MWx+/89nMinJyB2icyl58RIcqCmIggpojIGeuJGhjU1aGMBSg==}
