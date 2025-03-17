@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.10.1
-        version: 4.10.1(@typescript-eslint/utils@8.26.0)(@vue/compiler-sfc@3.5.13)(eslint@9.22.0)(typescript@5.8.2)
+        version: 4.10.1(@typescript-eslint/utils@8.26.1)(@vue/compiler-sfc@3.5.13)(eslint@9.22.0)(typescript@5.8.2)
       '@types/node':
         specifier: ^22.13.10
         version: 22.13.10
@@ -60,8 +60,8 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2(vite@6.2.2)(vue@3.5.13)
       '@vueuse/core':
-        specifier: ^12.8.2
-        version: 12.8.2(typescript@5.8.2)
+        specifier: ^13.0.0
+        version: 13.0.0(vue@3.5.13)
       esno:
         specifier: ^4.8.0
         version: 4.8.0
@@ -372,7 +372,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: false
 
-  /@antfu/eslint-config@4.10.1(@typescript-eslint/utils@8.26.0)(@vue/compiler-sfc@3.5.13)(eslint@9.22.0)(typescript@5.8.2):
+  /@antfu/eslint-config@4.10.1(@typescript-eslint/utils@8.26.1)(@vue/compiler-sfc@3.5.13)(eslint@9.22.0)(typescript@5.8.2):
     resolution: {integrity: sha512-iZdzBOvQJYYaZ8kCnzy9EZVGWZtGn1q+OiDDPABvzf6SVl1jfQ8EUM7L0OyoUyDI3wwR5WI8jihcjDzsteuKbA==}
     hasBin: true
     peerDependencies:
@@ -425,7 +425,7 @@ packages:
       '@stylistic/eslint-plugin': 4.2.0(eslint@9.22.0)(typescript@5.8.2)
       '@typescript-eslint/eslint-plugin': 8.26.1(@typescript-eslint/parser@8.26.1)(eslint@9.22.0)(typescript@5.8.2)
       '@typescript-eslint/parser': 8.26.1(eslint@9.22.0)(typescript@5.8.2)
-      '@vitest/eslint-plugin': 1.1.37(@typescript-eslint/utils@8.26.0)(eslint@9.22.0)(typescript@5.8.2)
+      '@vitest/eslint-plugin': 1.1.37(@typescript-eslint/utils@8.26.1)(eslint@9.22.0)(typescript@5.8.2)
       ansis: 3.17.0
       cac: 6.7.14
       eslint: 9.22.0
@@ -2713,7 +2713,7 @@ packages:
       vue: 3.5.13(typescript@5.8.2)
     dev: false
 
-  /@vitest/eslint-plugin@1.1.37(@typescript-eslint/utils@8.26.0)(eslint@9.22.0)(typescript@5.8.2):
+  /@vitest/eslint-plugin@1.1.37(@typescript-eslint/utils@8.26.1)(eslint@9.22.0)(typescript@5.8.2):
     resolution: {integrity: sha512-cnlBV8zr0oaBu1Vk6ruqWzpPzFCtwY0yuwUQpNIeFOUl3UhXVwNUoOYfWkZzeToGuNBaXvIsr6/RgHrXiHXqXA==}
     peerDependencies:
       '@typescript-eslint/utils': ^8.24.0
@@ -2726,7 +2726,7 @@ packages:
       vitest:
         optional: true
     dependencies:
-      '@typescript-eslint/utils': 8.26.0(eslint@9.22.0)(typescript@5.8.2)
+      '@typescript-eslint/utils': 8.26.1(eslint@9.22.0)(typescript@5.8.2)
       eslint: 9.22.0
       typescript: 5.8.2
     dev: true
@@ -3021,6 +3021,17 @@ packages:
       - typescript
     dev: false
 
+  /@vueuse/core@13.0.0(vue@3.5.13):
+    resolution: {integrity: sha512-rkgb4a8/0b234lMGCT29WkCjPfsX0oxrIRR7FDndRoW3FsaC9NBzefXg/9TLhAgwM11f49XnutshM4LzJBrQ5g==}
+    peerDependencies:
+      vue: ^3.5.0
+    dependencies:
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 13.0.0
+      '@vueuse/shared': 13.0.0(vue@3.5.13)
+      vue: 3.5.13(typescript@5.8.2)
+    dev: false
+
   /@vueuse/integrations@12.5.0(focus-trap@7.6.4)(typescript@5.8.2):
     resolution: {integrity: sha512-HYLt8M6mjUfcoUOzyBcX2RjpfapIwHPBmQJtTmXOQW845Y/Osu9VuTJ5kPvnmWJ6IUa05WpblfOwZ+P0G4iZsQ==}
     peerDependencies:
@@ -3078,6 +3089,10 @@ packages:
     resolution: {integrity: sha512-rAyLGEuoBJ/Il5AmFHiziCPdQzRt88VxR+Y/A/QhJ1EWtWqPBBAxTAFaSkviwEuOEZNtW8pvkPgoCZQ+HxqW1A==}
     dev: false
 
+  /@vueuse/metadata@13.0.0:
+    resolution: {integrity: sha512-TRNksqmvtvqsuHf7bbgH9OSXEV2b6+M3BSN4LR5oxWKykOFT9gV78+C2/0++Pq9KCp9KQ1OQDPvGlWNQpOb2Mw==}
+    dev: false
+
   /@vueuse/shared@12.5.0(typescript@5.8.2):
     resolution: {integrity: sha512-vMpcL1lStUU6O+kdj6YdHDixh0odjPAUM15uJ9f7MY781jcYkIwFA4iv2EfoIPO6vBmvutI1HxxAwmf0cx5ISQ==}
     dependencies:
@@ -3092,6 +3107,14 @@ packages:
       vue: 3.5.13(typescript@5.8.2)
     transitivePeerDependencies:
       - typescript
+    dev: false
+
+  /@vueuse/shared@13.0.0(vue@3.5.13):
+    resolution: {integrity: sha512-9MiHhAPw+sqCF/RLo8V6HsjRqEdNEWVpDLm2WBRW2G/kSQjb8X901sozXpSCaeLG0f7TEfMrT4XNaA5m1ez7Dg==}
+    peerDependencies:
+      vue: ^3.5.0
+    dependencies:
+      vue: 3.5.13(typescript@5.8.2)
     dev: false
 
   /abab@2.0.6:
