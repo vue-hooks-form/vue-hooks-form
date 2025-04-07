@@ -19,7 +19,7 @@
     "jiti": "^2.4.2",
     "unocss": "^66.0.0",
     "unplugin-vue-components": "^28.4.1",
-    "vite": "^6.2.3",
+    "vite": "^6.2.5",
     "vitepress": "1.6.3",
     "workbox-window": "^7.3.0"
   }
