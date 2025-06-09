@@ -16,6 +16,6 @@
     "@vue-hooks-form/zod": "workspace:*",
     "vite": "^6.3.5",
     "vue-tsc": "^2.2.10",
-    "zod": "^3.25.46"
+    "zod": "^3.25.56"
   }
 }
