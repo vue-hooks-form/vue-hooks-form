@@ -139,8 +139,8 @@ importers:
         specifier: workspace:*
         version: link:../core
       zod:
-        specifier: 3.25.76
-        version: 3.25.76
+        specifier: 4.0.5
+        version: 4.0.5
 
   playground:
     dependencies:
@@ -166,8 +166,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.8.3)
       zod:
-        specifier: ^3.25.76
-        version: 3.25.76
+        specifier: ^4.0.5
+        version: 4.0.5
 
   test:
     dependencies:
@@ -8809,8 +8809,8 @@ packages:
       type-fest: 2.19.0
     dev: false
 
-  /zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  /zod@4.0.5:
+    resolution: {integrity: sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA==}
     dev: false
 
   /zwitch@2.0.4:
