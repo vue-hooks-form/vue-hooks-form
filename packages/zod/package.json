@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "@vue-hooks-form/core": "workspace:*",
-    "zod": "4.0.10"
+    "zod": "4.0.14"
   }
 }
