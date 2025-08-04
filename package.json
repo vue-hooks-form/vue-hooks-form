@@ -35,7 +35,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.19.0",
+    "@antfu/eslint-config": "^5.1.0",
     "@types/node": "^22.16.5",
     "bumpp": "^10.2.0",
     "chalk": "^5.4.1",
