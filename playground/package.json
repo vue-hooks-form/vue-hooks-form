@@ -14,7 +14,7 @@
     "@vue-hooks-form/core": "workspace:*",
     "@vue-hooks-form/yup": "workspace:*",
     "@vue-hooks-form/zod": "workspace:*",
-    "vite": "^7.1.1",
+    "vite": "^7.1.2",
     "vue-tsc": "^3.0.5",
     "zod": "^4.0.17"
   }
