@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "@vue-hooks-form/core": "workspace:*",
-    "yup": "^1.7.0"
+    "yup": "^1.7.1"
   }
 }
