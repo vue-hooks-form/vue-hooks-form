@@ -22,7 +22,8 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v6.0.5
         with:
-          version: latest
+          # Lockfiles are still v6. pnpm 10+ ignores them and pnpm 12 rejects them.
+          version: 9.15.9
 
       - name: Install node
         uses: actions/setup-node@v6
